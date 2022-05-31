@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #19283F;
+    --main2-color: #1d3963d2;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    --blue-color: rgb(58, 58, 122);
+}
+
+body {
+    background-color: white;
+    position: relative;
+}
+
+/*Start nav bar*/
+.navbar {
+    background-color: var(--main-color);
+}
+
+nav.navbar .fa-angrycreative {
+    color: var(--green-color);
+    font-size: 50px;
+}
+
+.fa-bars {
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.main-btn {
+    background-color: var(--blue-color);
+    color: var(--yellow-color);
+    border: none;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+    background-color: var(--green-color);
+    color: var(--main-color);
+    box-shadow: none;
+}
+
+/*End nav bar*/
+/* Start Scroll Button*/
+.scroll-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 60px;
+    color: var(--blue-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+.scroll-button svg {
+    transition: 1s;
+
+}
+
+.scroll-button::before {
+    content: "UP";
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--yellow-color);
+    top: 22px;
+    left: 12px;
+}
+
+
+/* End Scroll Button*/
+/* Start Our Work  */
+.our-work-heading h1 {
+-webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0, 0, 0, .5));
+font-size: 6vmax;
+color: var(--green-color);
+}
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work svg{
+    color: var(--yellow-color);
+    font-size: 50px;
+}
+.our-work li a.list-our-work.active {
+    background-color: var(--blue-color);
+    color: var(--yellow-color);
+}
+
+.our-work ul li:not(.active):hover a {
+    color: var(--red-color);
+}
+
+.box-cont {
+    overflow: hidden;
+    min-height: 100vh;
+}
+.box-cont p{
+    color: var(--main-color);
+}
+.box-cont-img {
+    overflow: hidden;
+    position: relative;
+    max-width: fit-content;
+}
+.box-cont-img::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: var(--main2-color);
+    width: calc(100%);
+    height: calc(100% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--red-color);
+    opacity: .85;
+    transition: translate 2s;
+    transform: translate(calc(-100%));
+
+}
+
+.box-cont-img:hover::before {
+    transform: translateX(0%);
+    transition: .4s;
+}
+
+/* End Our Work  */
+
+/* Start Footer */
+footer {
+    background-color: var(--main-color);
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--yellow-color);
+}
+
+
+/* End Footer */

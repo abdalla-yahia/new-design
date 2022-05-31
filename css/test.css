@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eee;
+    overflow: hidden;
+    flex-direction: column;
+}
+.parent .contact{
+    font-size: 8em;
+    font-weight: 700;
+    position: absolute;
+    top:5%;
+    opacity: .5;
+    /* transform-style: preserve-3d; */
+    animation: .5s animat linear ;
+}
+@keyframes animat{
+    0%{
+        transform: scale(1.1);
+    }
+ 
+}
+.parent .contact .mov{
+    color: rgb(245, 6, 6);
+    opacity: 1;
+    /* border: .5px solid rgb(59, 57, 57); */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+                5px 5px 5px rgba(0,0,0,0.1),
+                5px 5px 5px rgba(0,0,0,0.1),
+                5px 5px 5px rgba(0,0,0,0.1),
+                inset 1px 1px 1px #fff
+    ;
+    -webkit-box-reflect: below 0px linear-gradient(transparent,rgba(0,0,0,0.15), transparent);
+
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li{
+    list-style: none;
+    overflow: hidden;
+-webkit-box-reflect: below 0px linear-gradient(transparent,rgba(0,0,0,0.15), transparent);
+
+}
+.social li a{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    background-color: #fff;
+    font-size: 5em;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3),
+                10px 10px 10px rgba(0,0,0,0.01),
+                15px 15px 15px rgba(0,0,0,0.01),
+                20px 20px 20px rgba(0,0,0,0.01),
+                inset 2px 2px 2px #fff
+    ;
+}
+.social li::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 18em;
+    transform: translate(-50%,calc(-50% + 120px));
+    font-weight: 700;
+    opacity: 0;
+    transition: .4s;
+    pointer-events: none;
+    
+}
+.social li:hover::before{
+opacity: .2;
+transform: translate(-50%, calc(-50% + 150px));
+
+}
+.social li:hover ~.parent .contact{
+    display: none;
+}
+.social li a:hover.facebook {
+    background-color: #3d45b6;
+}
+.social li a:hover.youtube {
+    background-color: red;
+}
+.social li a:hover.twitter {
+    background-color: #6a7de6;
+}
+.social li a:hover.instagram {
+    background-image: linear-gradient(45deg, blue , red );
+}
+.social li a:hover.whatsapp {
+    background-color: #04a71f;
+    
+}
+
+
+.social li a:hover i{
+    color: #fff;
+    transform:  scale(.8) translateZ(40px);
+}
+
+.js-tilt-glare{
+    border-radius: 10px;
+}

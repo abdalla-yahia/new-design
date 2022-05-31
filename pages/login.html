@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="icon" content="five-icon">
+    <meta name="description" content="login-page">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+            <!-- Start Nav bar-->
+            <nav class="navbar navbar-expand-lg sticky-top ">
+                <div class="container ">
+                    <a class="navbar-brand" href="https://www.github.com/abdalla-yahia/"><i class="fa-brands fa-angrycreative"></i>
+                    .</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                        aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars "></i>
+                    </button>
+                    <div class="collapse navbar-collapse " id="main">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link  p-2 p-lg-3" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3" href="../pages/about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3" href="../pages/portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3" href="../pages/servicies.html">Servicies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 p-lg-3 " href="../pages/contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active p-2 p-lg-3 " href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Nav bar-->
+            <!--Start Scroll Button-->
+            <button class="scroll-button ">
+                <i class="fa-solid fa-up-long "></i>
+            </button>
+            <!--End Scroll Button-->
+            <!--Start Form-->
+            <form class="row g-3 p-5 overflow-hidden needs-validation" novalidate>
+                <div class=" col-lg-12 position-relative">
+                    <label for="username" class="form-label">First name</label>
+                    <input type="text" class="form-control" name="first-name" id="username" value="" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class=" col-lg-12  position-relative">
+                    <label for="validationTooltip02" class="form-label">Last name</label>
+                    <input type="text" name="last-name" class="form-control" id="validationTooltip02" value="" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class=" col-lg-12 position-relative">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="emailPrepend">@</span>
+                        <input type="email" class="form-control" id="email"
+                            aria-describedby="emailPrepend" name="email" required>
+                        <div class="invalid-tooltip">
+                            Please choose a unique and valid username.
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-12 position-relative">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6  position-relative">
+                    <label for="validationTooltip04" class="form-label">State</label>
+                    <select class="form-select" id="validationTooltip04" required>
+                        <option selected disabled value="">Choose your state</option>
+                        <option>Very happy...</option>
+                        <option>happy...</option>
+                        <option>good...</option>
+                        <option>bad...</option>
+                        <option>Very bad...</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 position-relative">
+                    <label for="validationTooltip05" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validationTooltip05" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="btn main-btn  col-md-6 col-sm-3 fw-bold mb-4" type="submit">Submit</button>
+                    <button class="btn main-btn col-md-6 col-sm-3  mb-4 bg-danger text-dark btn-outline-light">Clear</button>
+                </div>
+            </form>
+    <!--End Form-->
+        <!--Start Footer-->
+        <footer class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 ">
+                        <h3 class="text-danger">Sitemap</h3>
+                        <ul class="list-unstyled d-flex mt-5 me-5">
+                            <div class="row">
+                                <div class="col-4 ">
+                                    <li class="m-3 "><a href="../index.html">Home</a></li>
+                                    <li class="m-3"><a href="../pages/about.html">About</a></li>
+                                    <li class="m-3"><a href="../pages/portfolio.html">Portfolio</a></li>
+                                </div>
+                                <div class="col-4">
+                                    <li class="m-3"><a href="../pages/servicies.html">Services</a></li>
+                                    <li class="m-3"><a href="../pages/contact.html">Contact</a></li>
+                                    <li class="m-3"><a href="#">Code</a></li>
+                                </div>
+                                <div class="col-4">
+                                    <li class="m-3"><a href="#">Company</a></li>
+                                    <li class="m-3"><a href="#">Host</a></li>
+                                    <li class="m-3"><a href="#">Sitemap</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                        <ul class="social-media list-unstyled d-flex">
+                            <li class="m-3 "><a href="https://www.facebook.com/ABOOOOOOOOOODD"><i
+                                        class="fa-brands fa-facebook-f "></i>.</a></li>
+                            <li class="m-3"><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i>.</a></li>
+                            <li class="m-3"><a href="https://www.google.com/"><i class="fa-brands fa-google-plus"></i>.</a></li>
+                            <li class="m-3"><a href="https://www.youtube.com/channel/UCmo_QkdUJ-9vqa2gm2wFyqg"><i
+                                        class="fa-brands fa-youtube"></i>.</a></li>
+                            <li class="m-3"><a href="https://github.com/abdalla-yahia"><i class="fa-brands fa-whatsapp"></i>.</a>
+                            </li>
+                            <li class="m-3"><a href="https://www.linkedin.com/in/abdalla-yahia/"><i
+                                        class="fa-brands fa-linkedin"></i>.</a></li>
+                        </ul>
+                       
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-danger">Latest Articles</h3>
+                        <ul class="list-unstyled mt-5">
+                            <li class="">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid w-50 rounded-circle " src="../images/a (1).png" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6 class="lead text-info">Programming</h6>
+                                        <p class="text-white-50">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid w-50 rounded-circle " src="../images/a (2).png" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6 class="lead text-info">Coding</h6>
+                                        <p class="text-white-50">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid w-50 rounded-circle " src="../images/a (3).png" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6 class="lead text-info">Web Design</h6>
+                                        <p class="text-white-50">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 ">
+                        <h3 class="text-danger">Our Awesome Work</h3>
+                        <ul class="list-unstyled d-flex ">
+                            <div class="row">
+                                <div class="col-6">
+                                    <li class="mt-5">
+                                        <a href="#">
+                                            <img class="img-fluid w-75" src="../images/1 (2).jpg" alt="">.
+                                        </a>
+                                    </li>
+                                    <li class="mt-5">
+                                        <a href="#">
+                                            <img class="img-fluid w-75" src="../images/1 (3).jpg" alt="">.
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="col-6">
+                                    <li class="mt-5">
+                                        <a href="#">
+                                            <img class="img-fluid w-75" src="../images/1 (4).jpg" alt="">.
+                                        </a>
+                                    </li>
+                                    <li class="mt-5">
+                                        <a href="#">
+                                            <img class="img-fluid w-75" src="../images/1 (5).jpg" alt="">.
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <p class="lead text-danger copyRights">Develoed By <a href="https://www.linkedin.com/in/abdalla-yahia/">Abdalla
+                            Yahia</a> &copy;</p>
+                </div>
+            </div>
+        </footer>
+        <!--End Footer-->
+        <script> let date = new Date(); document.querySelector(".copyRights").innerHTML += date.getFullYear();</script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
