@@ -52,12 +52,37 @@ font-size: 50px;
     box-shadow: none;
 }
 .main-btn{
+    /* background-color: var(--blue-color);
+    color: var(--yellow-color);
+    border: none; */
+    border: none;
     background-color: var(--blue-color);
     color: var(--yellow-color);
-    border: none;
+    position: relative;
+    overflow: hidden;
+}
+span.spa {
+    position: absolute;
+    background-color: rgb(10, 5, 5);
+    animation: span 1s infinite linear;
+    border-radius: 50%;
+    transition: 2s;
+    transform: translate(-50%, -50%);
 }
 
-.main-btn:hover,
+    from {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+
+    to {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+/* .main-btn:hover, */
 .main-btn:focus{
     background-color: var(--green-color);
     color:var(--main-color);
@@ -268,6 +293,9 @@ font-size: 50px;
     background-color: var(--section-color);
     font-size: 40px;
 }
+
+
+
 /* End Our amazing Price  */
 
 /* Start Our team */

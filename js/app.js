@@ -2,10 +2,10 @@
 
 /*Start Home Page */
 VanillaTilt.init(document.querySelectorAll(".main-plane"), {
-    max: 25,
-    speed: 400,
+    max: 15,
+    speed: 200,
     glare: true,
-    "max-glare":1,
+    "max-glare":.5,
 });
 /*############################# Start Scroll Button ###########*/
 let scrollButton = document.querySelector(".scroll-button");
@@ -89,5 +89,18 @@ function addcounter2() {
         }
     }
 
-/*End Counter Statistics*/ 
+/*End Counter Statistics*/
 /*End Home Page */
+
+document.querySelector(".main-btn").addEventListener("mouseenter", function (e) {
+    let span = document.createElement("span");
+    let x = e.clientX - e.target.offsetLeft;
+    let y = e.clientY - e.target.offsetTop;
+    span.style.left = x+"px";
+    span.style.top = y + "px";
+    span.classList.add("spa")
+    this.appendChild(span);
+    setTimeout(() => {
+        span.remove();
+    }, 1000);
+})

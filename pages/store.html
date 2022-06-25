@@ -47,11 +47,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active p-2 p-lg-3 " href="../pages/contact.html">Contact Us</a>
+                        <a class="nav-link  p-2 p-lg-3 " href="../pages/contact.html">Contact Us</a>
                     </li>
-                    
+
                     <li class="nav-item">
-                        <a class="nav-link  p-2 p-lg-3 " href="../pages/store.html">Our Store</a>
+                        <a class="nav-link active p-2 p-lg-3 " href="../pages/store.html">Our Store</a>
                     </li>
 
                 </ul>
@@ -63,55 +63,76 @@
         </div>
     </nav>
     <!-- End Nav bar-->
-        <!--Start Scroll Button-->
-        <button class="scroll-button ">
-            <i class="fa-solid fa-up-long "></i>
-        </button>
-        <!--End Scroll Button-->
-    <!--Start Concatunation-->
-    <img class="" width="100%" height="250px" src="../images/c (8).jpeg" alt="">
-       <section class="parent pt-5 bp-5">
-            <div class="container ">
-            <div class="col-md-12 text-center d-flex justify-content-center align-items-center">
-             <span class="contact"><span class="mov ">C</span>ontact U<span class="mov"
-                >s</span></span>
-                    </div>
+    <!--Start Scroll Button-->
+    <button class="scroll-button ">
+        <i class="fa-solid fa-up-long "></i>
+    </button>
+    <!--End Scroll Button-->
+    <section class="our-store">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 " dir="rtl">
+                    <button class="btn main-btn mt-3 new-operation" >عملية جديدة</button>
+                    <select name="" id=""  class="btn main-btn mt-3">
+                    <option selected disabled>إختر نوع العملية</option>
+                    <option value="">بيع</option>
+                    <option value="">شراء</option>
+                    </select>
+                    <select name="" id="" class="btn main-btn mt-3">
+                        <option selected disabled>إختر طريقة الدفع </option>
+                        <option value="">نقدي</option>
+                        <option value="">أجل</option>
+                    </select>
+                    <form class="form-operation mt-2">
+                        <label for=""> التاريخ</label>
+                        <input type="datetime" required dir="ltr" class="the-date-operation" placeholder="Date Of Operation">
+                        <label for=""> الكمية</label>
+                        <input type="number" min="1" required dir="ltr" class="the-count-operation" placeholder="Count Of Operation">
+                        <label for=""> سعر الشراء</label>
+                        <input type="number" min="1" required dir="ltr" class="the-price-operation" placeholder="Price Of Operation">
+                            <select name="" id="" class=" mt-3" style="display:none;">
+                                <option selected disabled>إختر إسم العميل </option>
+                                <option value="">أحمد على</option>
+                                <option value="">سيد محمود</option>
+                                <option value="">رامي فتحي</option>
+                            </select>
+                            <select name="" id="" class="  mt-3" style="display:none;">
+                                <option selected disabled>إختر إسم المورد </option>
+                                <option value="">أحمد على</option>
+                                <option value="">سيد محمود</option>
+                                <option value="">رامي فتحي</option>
+                            </select>
+                        <button class="btn main-btn operation-done" type="submit">تنفيذ العملية</button>
+                        <button class="btn btn-danger operation-cancel">إلغاء </button>
+                    </form>
+                    <table class="table table-bordered text-center mt-5 mb-5" >
+                        <thead class="table-secondary text-danger">
+                            <td>التاريخ</td>
+                            <td>الكمية</td>
+                            <td>السعر</td>
+                            <td>اجمالي القيمة</td>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr class="new-row">
+                                <td class="the-date-of-buy">15-2-2022</td>
+                                <td class="the-count-of-buy">1500</td>
+                                <td class="the-price-of-buy">15</td>
+                                <td class="total-price-buy"></td>
+                            </tr>
+                            <tr class="new-row">
+                                <td class="the-date-of-buy">15-2-2022</td>
+                                <td class="the-count-of-buy">1000</td>
+                                <td class="the-price-of-buy">16</td>
+                                <td class="total-price-buy"></td>
+                            </tr>
+                        </tbody>
+                      </table>
 
-            <ul class="social">
-                <div class="row">
-
-                <div class="col-md-2 ms-lg-4 mb-md-2 bef-tex" data-color="#3d45b6" data-text="Facebook">
-                <li >
-                    <a href="https://www.facebook.com/ABOOOOOOOOOODD" class="facebook">
-                        <span class="svg-span"><i class="fa-brands fa-facebook-f"></i></span>
-                    </a>
-                </li>
                 </div>
-                <div class="col-md-2 ms-lg-4 mb-md-2 bef-tex" data-color="red" data-text="Youtube">
-                <li >
-                    <a href="https://www.youtube.com/channel/UCmo_QkdUJ-9vqa2gm2wFyqg" class="youtube text-danger"><i class="fab fa-youtube"></i></a>
-                </li>
-                </div>
-                <div class="col-md-2 ms-lg-4 mb-md-2 bef-tex"data-color="#6a7de6"  data-text="Twitter">
-                <li >
-                    <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                </div>
-                <div class="col-md-2 ms-lg-4 mb-md-2 bef-tex" data-color="linear-gradient(45deg, blue , red )"  data-text="Instagram">
-                <li>
-                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                </div>
-                <div class="col-md-2 ms-lg-4 mb-md-2 bef-tex" data-color="#04a71f" data-text="Whatsapp">
-                <li  >
-                    <a href="#" class="whatsapp text-success"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </li>
-                </div>
-            </ul>
+            </div>
         </div>
-        </section> 
-    <!--End Concatunation-->
+
+    </section>
     <!--Start Footer-->
     <footer class="pt-5">
         <div class="container">
@@ -140,11 +161,14 @@
                     <ul class="social-media list-unstyled d-flex">
                         <li class="m-3 "><a href="https://www.facebook.com/ABOOOOOOOOOODD"><i
                                     class="fa-brands fa-facebook-f "></i>.</a></li>
-                        <li class="m-3"><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i>.</a></li>
-                        <li class="m-3"><a href="https://www.google.com/"><i class="fa-brands fa-google-plus"></i>.</a></li>
+                        <li class="m-3"><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i>.</a>
+                        </li>
+                        <li class="m-3"><a href="https://www.google.com/"><i class="fa-brands fa-google-plus"></i>.</a>
+                        </li>
                         <li class="m-3"><a href="https://www.youtube.com/channel/UCmo_QkdUJ-9vqa2gm2wFyqg"><i
                                     class="fa-brands fa-youtube"></i>.</a></li>
-                        <li class="m-3"><a href="https://github.com/abdalla-yahia"><i class="fa-brands fa-whatsapp"></i>.</a>
+                        <li class="m-3"><a href="https://github.com/abdalla-yahia"><i
+                                    class="fa-brands fa-whatsapp"></i>.</a>
                         </li>
                         <li class="m-3"><a href="https://www.linkedin.com/in/abdalla-yahia/"><i
                                     class="fa-brands fa-linkedin"></i>.</a></li>
@@ -219,8 +243,9 @@
                         </div>
                     </ul>
                 </div>
-                    <p class="lead text-danger copyRights">Develoed By <a href="https://www.linkedin.com/in/abdalla-yahia/">Abdalla
-                            Yahia</a> &copy;</p>
+                <p class="lead text-danger copyRights">Develoed By <a
+                        href="https://www.linkedin.com/in/abdalla-yahia/">Abdalla
+                        Yahia</a> &copy;</p>
             </div>
         </div>
     </footer>
